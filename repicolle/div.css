@@ -1,0 +1,137 @@
+@charset "UTF-8";
+
+/*==== 定義設定 ====================================*/
+
+/* 一番上階層のページ領域 */
+#all
+{
+	width: 100%;
+	height: 100%;
+	min-width: 1024px;
+	text-align: left;
+	position: relative;
+}
+
+/* IE6用スターハック */
+* all #container
+{
+	height:100%;
+}
+
+/* コンテナボックス */
+#container
+{
+	position: relative;
+	min-height: 100%;
+}
+
+/* firefox用バグ対策 */
+#all > #container
+{
+	height: auto;
+}
+
+/* ヘッダー */
+#header
+{
+	height: 80px;
+	border-bottom: 1px solid #d0d0d0;
+	background: url(./img/maintenance/background.png);
+}
+
+/* メインボックス */
+#main
+{
+	width: 1000px;
+	height: 100%;
+	margin: 0 auto;
+	padding-bottom: 50px;
+}
+
+/* 本文 */
+#content
+{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	z-index: 1000;
+}
+
+/* フッター */
+#footer
+{
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	height: 50px;
+	background: url(./img/maintenance/background_footer3.png);
+	clear: both;
+}
+
+
+
+
+/*==== 領域設定 ====================================*/
+
+/* ヘッダー */
+#headerArea
+{
+	border-bottom:2px dashed #B86E40;
+	height:73px;
+	padding:0 30px;
+}
+
+#blog
+{
+	width: 217px;
+	height: 85px;
+	position: absolute;
+	right: 0px;
+	top: -80px;
+}
+
+/* フッター */
+#footerArea
+{
+	padding: 15px 140px;
+	color: #eeeeee;
+	
+}
+
+/* 本文 */
+#contentArea
+{
+	padding: 20px;
+}
+
+
+/*==== その他特殊用途設定 ====================================*/
+
+/* 回り込み解除 */
+div.clear
+{
+	clear: both;
+}
+
+/* ボーダーライン（点線） */
+div.border_line
+{
+	border-top: 2px dashed #ffb062;
+	clear: both;
+}
+
+
+/*==== HTML5 ====================================*/
+.middle
+{
+	display: -moz-box;
+	display: -webkit-box;
+	-moz-box-align: center;
+	-webkit-box-align: center;
+	-moz-box-pack: center;
+	-webkit-box-pack: center;
+}
+#maintenance_banner_image > img
+{
+	width: 100% !important;
+}

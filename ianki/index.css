@@ -1,0 +1,108 @@
+@charset "utf-8";
+/**
+* インデックスページのCSS
+* @auth miho.kojima
+* @since 2009/10/23
+*/
+
+
+/* トピック
+-------------------------------------------*/
+div#topic_top{
+	background-image: url(../img/topic_head_line.gif);
+	background-repeat: no-repeat;
+	background-position:top;
+	text-align: top;
+	padding-top: 48px;
+}
+
+div#topic{
+	background-color:#FFF;
+	border:solid 5px #a2e7ff;
+	text-align:left;
+	min-height: 180px;
+
+}
+ul#topic li{
+	min-height: 23px;
+	width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top:7px;
+	border-bottom: dashed 1px #d6d5d5;
+}
+
+/* i暗記とは
+-------------------------------------------*/
+table.ianki_info_title{
+	width: 612px;
+	height:30px;
+	font-size: 20px;
+	color: #004370;
+	font-weight: none;
+	table-layout: fixed;
+	vertical-align: bottom;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+table.ianki_info_title td.img{
+	width: 28px;
+	background-image: url("../img/list_iankikun_icon.gif");
+	background-repeat: no-repeat;
+	background-position:left bottom;
+}
+table.ianki_info_title td.title{
+	vertical-align: bottom;
+}
+
+
+div.ianki_info_contents{
+	width: 570px;
+	margin-left: 30px;
+	line-height: 2;
+}
+
+div.ianki_info_contents div.img{
+	width: 500px;
+	text-align: center;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+table.ianki_mode_title{
+	width: 612px;
+	height:30px;
+	font-size: 16px;
+	color: #004370;
+	font-weight: none;
+	table-layout: fixed;
+	vertical-align: bottom;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+table.ianki_mode_title td.img{
+	width: 35px;
+}
+table.ianki_mode_title td.title{
+	vertical-align: bottom;
+}
+div.ianki_mode_contents{
+	margin-left: 30px;
+}
+
+/* 問い合わせ
+-------------------------------------------*/
+table#inquiryList{
+	width: 612px;
+	color: #004370;
+	font-weight: none;
+	table-layout: fixed;
+
+}
+table#inquiryList td{
+	border-bottom:1px solid #004370;
+}
+table#inquiryList th{
+	border-bottom:1px solid #004370;
+}

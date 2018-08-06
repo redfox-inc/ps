@@ -1,0 +1,406 @@
+@charset "utf-8";
+/**
+* i暗記内共通部分のCSS
+* @auth miho.kojima
+* @since 2009/10/23
+*/
+
+/* BODYの指定
+-------------------------------------------*/
+body { /* BODY */
+	text-align: center;
+	background-color: white;
+	background-repeat: no-repeat;
+	line-height: 1.3;
+	color: #696969;
+}
+
+body a { /* リンク */
+	color: #696969;
+	text-decoration: underline;
+}
+
+body a:hover { /* リンクマウスオーバー */
+	color: #064263;
+	text-decoration: underline;
+}
+
+
+/* ヘッダー
+-------------------------------------------*/
+div#header {
+/*	background-image: url(../img/bg.png);	*/
+	background-image: url(../img/share_cp/bg.gif);
+	background-repeat: repeat;
+	height: 88px;
+}
+
+div#head_bar {/* ヘッダーのバー */
+	background-image: url(../img/head_bar_bg.gif);
+	background-repeat: repeat;
+	height:18px;
+}
+
+table#header_main_table { /* ロゴ等の主要なヘッダー部分 */
+	width: 890px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 16px;
+	text-align: center;
+}
+
+td#logo {
+	text-align:left;
+	padding-top: 16px;
+	padding-left: 2px;
+}
+
+td#redfox_logo {
+	text-align:right;
+	padding-top: 19px;
+}
+
+td#banner {
+    display: inline;
+    position: relative;
+    top: 8px;
+    left: -60px;
+}
+
+div#headbar_main  {/* ヘッダーのバーの中 */
+	width: 890px;
+	height:18px;
+	color: white;
+	text-align:left;
+	margin-left:auto;
+	margin-right: auto;
+	vertical-align: middle;
+	padding-top:2px;
+	font-size: 11px;
+}
+div#headbar_main a {/* ヘッダーのバーの中 */
+	color: white;
+	text-decoration: none;
+	font-size: 11px;
+}
+div#headbar_main a:HOVER{/* ヘッダーのバーの中 */
+	color: white;
+	font-size: 11px;
+	text-decoration: underline;
+}
+/* レイアウト
+-------------------------------------------*/
+div#page {/* ページ全体 */
+	margin-right: auto;
+	margin-left: auto;
+	background-image: url(../img/page_bg.gif);
+/*	background-image: url(../img/xmas/bg.gif);*/      /* X'mas Version */
+	background-repeat: repeat-x;
+	text-align: left;
+}
+div#menu_contents {/* メニューとコンテンツの高さをそろえるブロック */
+	background-color: white;
+	overflow: hidden;
+	height: auto;
+	width: 890px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	padding-top: 7px;
+	padding-bottom: 30px;
+	border-bottom:dotted #8cb9d5 1px;
+
+}
+
+div#navigation_menu {/* メニュー */
+	width: 237px;
+	height: auto;
+	display:inline;/*IE*/
+	float: left;
+	padding-bottom: 32767px;/* 高さために指定 */
+	margin-bottom: -32767px;
+	padding-left:7px;
+}
+
+div#contents {/* コンテンツ */
+	width: 635px;
+	text-align: center;
+	display:inline;/*IE*/
+	float: left;
+	padding-bottom: 32767px;/* 高さために指定 */
+	margin-bottom: -32767px;
+}
+
+div#footer { /* フッター */
+	text-align: center;
+	width: 890px;
+	padding-top: 12px;
+	padding-bottom: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+/* ナビゲーションメニュー
+-------------------------------------------*/
+div#navi{ /* メニュー */
+	width: 230px;
+	background-color: #f0f2f2;
+	border:solid #e3e1e1 1px;
+	margin-bottom: 7px;
+	line-height: 2.0;
+}
+
+div#menu_user_service h3{ /* ユーザサービスタイトル */
+	width: 188px;
+	height: 34px;
+	background-image: url(../img/user_service_menu.gif);
+	background-repeat: no-repeat;
+	background-position: left;
+	color: #708090;
+	font-size: 16px;
+	font-weight: bold;
+	padding-left: 32px;
+	padding-top: 3px;
+}
+div#menu_user_service{ /* ユーザサービスのとこ */
+	width: 219px;
+	text-align: left;
+	margin-left:auto;
+	margin-right: auto;
+	margin-bottom: 5px;
+	margin-top: 5px;
+
+}
+
+div#menu_first h3{ /* はじめての方タイトル */
+	width: 188px;
+	height: 34px;
+	background-image: url(../img/first_menu.gif);
+	background-repeat: no-repeat;
+	background-position: left;
+	color: #708090;
+	font-size: 16px;
+	font-weight: bold;
+	padding-left: 32px;
+	padding-top: 3px;
+}
+div#menu_first{ /* はじめてのかたのところ */
+	width: 219px;
+	text-align: left;
+	margin-left:auto;
+	margin-right: auto;
+	margin-bottom: 5px;
+	margin-top: 5px;
+
+}
+div#menu_login h3{ /* ログインタイトル */
+	width: 188px;
+	height: 34px;
+	background-image: url(../img/login_menu.gif);
+	background-repeat: no-repeat;
+	background-position: left;
+	color: #708090;
+	font-size: 16px;
+	font-weight: bold;
+	padding-left: 32px;
+	padding-top: 3px;
+}
+div#menu_login{ /* ログインのところ */
+	width: 219px;
+	text-align: left;
+	margin-left:auto;
+	margin-right: auto;
+	margin-bottom: 5px;
+	margin-top: 15px;
+
+}
+table#user_name{/* ユーザ名*/
+	width: 219px;
+	height: auto;
+	font-size: 16px;
+	font-weight: bold;
+	white-space: normal;
+	table-layout: fixed;
+	word-break: break-all;
+
+}
+table#user_name font#mr{
+	font-weight: normal;
+	font-size: 14px;
+}
+table#login{ /* ログインフォーム */
+	margin-left:8px;
+	margin-top: 7px;
+}
+
+input#login_input_area { /* ログインフォームの入力項目 */
+	width: 130px;
+	margin-left: 10px;
+	border: 2px #e3e1e1 double;
+}
+input#login_submit { /* ログインボタン */
+	width: 97px;
+	height: 31px;
+	background: url(../img/login_button.gif) no-repeat;
+	border: none;
+	overflow: hidden;
+	cursor: pointer; /* カーソルを指マークに Operaはなぜか効かない*/
+	text-indent: -9999px; /*ボタンの文字を消す*/
+	text-align: left;
+	margin-left:auto;
+	margin-right:auto;
+	display: block; /*IEで背景が消えてしまう*/
+}
+
+input#login_submit:hover{ /* ログインボタンマウスオーバー */
+	background: url(../img/login_button_mouseover.gif) no-repeat;
+}
+
+/* Operaのみ適用 */
+*+html:first-child body form input#login_submit {
+	padding-left: 300px; /*適当*/
+}
+
+input#logout_submit { /* ログアウトボタン */
+	width: 83px;
+	height: 27px;
+	background: url(../img/logout_button.gif) no-repeat;
+	border: none;
+	overflow: hidden;
+	cursor: pointer; /* カーソルを指マークに Operaはなぜか効かない*/
+	text-indent: -9999px; /*ボタンの文字を消す*/
+	text-align: left;
+	margin-left:auto;
+	margin-right:auto;
+	display: block; /*IEで背景が消えてしまう*/
+}
+
+input#logout_submit:hover{ /* ログアウトボタンマウスオーバー */
+	background: url(../img/logout_button_mouseover.gif) no-repeat;
+}
+/* Operaのみ適用 */
+*+html:first-child body form input#logout_submit {
+	padding-left: 300px; /*適当*/
+}
+div.button_block{ /* ボタンのブロック */
+	margin-top: 15px;
+	margin-bottom: 10px;
+	text-align:center;
+}
+div#loss_password{ /* パスワード紛失 */
+	text-align:center;
+}
+
+ul#menu a{ /* メニュー項目リンク */
+	background-image: url(../img/user_menu_arrow.gif);
+	background-repeat: no-repeat;
+	background-position: 5px center;
+	text-align:left;
+	padding-left: 30px;
+	text-decoration: none;
+	display: block;
+	font-size: 14px;
+}
+
+ul#menu a:hover{ /* メニュー項目リンクマウスオーバー */
+	text-decoration: underline;
+	display: block;
+}
+
+div#bunner_box {/* バナーのブロック */
+	width: 232px;
+	margin-top: 11px;
+}
+div#bunner_box li{/* バナーのブロック */
+	margin-top: 12px;
+}
+
+
+
+/* コンテンツ
+-------------------------------------------*/
+div#contents div#title {/* コンテンツのタイトル */
+	height: auto;
+	width: 598px;
+	background-image: url(../img/contents_title_icon.gif);
+	background-repeat:no-repeat;
+	background-position:left 10px;
+	border-bottom-width: 2px;
+	border-bottom-style: dotted;
+	border-bottom-color: #dcdbdb;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 5px;
+	padding-left: 15px;
+	margin-left: 20px;
+	text-align: left;
+}
+div#contents div#title h2 { /* タイトル文字指定 */
+	font-size: 24px;
+	font-weight: bold;
+}
+div#main_contents{ /* コンテンツ */
+	width: 615px;
+	text-align:left;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 15px;
+	padding-left : 20px;
+}
+div#text{ /* コンテンツ */
+	line-height: 2.4;
+}
+/* フッター
+------------------------------------------*/
+ul#user_support a{ /*項目*/
+	background-image: url(../img/footer_menu_arrow.gif);
+	background-repeat: no-repeat;
+	background-position: 5px center;
+	text-align:left;
+	padding-left: 20px;
+	text-decoration: none;
+	font-size: 13px;
+}
+ul#user_support li{ /*項目*/
+	display:inline;
+}
+
+ul#user_support  a:hover{/*リンク文字指定*/
+	text-decoration: underline;
+}
+div #footer table{
+	width: 100%;
+}
+/* 共通使用部分
+-------------------------------------------*/
+div.td_over{ /* セルの幅に入りきらないとき[…]で表示する(IE)*/
+	white-space:nowrap;
+	overflow:hidden;
+	width:100%;
+	text-overflow:ellipsis;
+}
+
+button.border_less {/*ボタンに枠を表示しない*/
+	border:0px;
+	background-color:transparent;
+}
+input.email{/*EMailの入力フォーム*/
+	width: 180px;
+}
+input.password{/*パスワードの入力フォーム*/
+	width: 100px;
+}
+input.handleName{/*ハンドルネームの入力フォーム*/
+	width: 150px;
+}
+font.errorMessage{/*バリデーションのメッセージ*/
+	color: #FF3366;
+}
+font.indispensability{/*必須項目の文字*/
+	color: #FF3366;
+}
+
+tr.bg_light_blue{ /* 水色背景の行 */
+	background-color: #e5f3fc;
+}

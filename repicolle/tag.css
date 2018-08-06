@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+/* 中央寄せ＋高さ 100% のボックスを作成可能にする */
+html,body
+{
+    height: 100%;
+    min-height: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* 背景 */
+body
+{
+    background: #fff;
+}
+
+a:link,a:visited
+{
+    color: #ffc618;
+}
+
+
+
+/*==== 見出し ====================================*/
+
+h1.heading_app_title
+{
+    padding-top: 50px;
+}
+
+h2.heading_app_copy
+{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+h3.present_title
+{
+    width: 640px;
+    height: 30px;
+}
